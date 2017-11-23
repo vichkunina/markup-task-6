@@ -18,42 +18,19 @@ main
 }
 
 .show-more-jokes,
-.type-of-joke a,
-.show-more-jokes a,
-.jokes > h2 a,
-.auto-news > h2 a:first-child,
-.traffic > h2 a:first-child,
-.weather > h2 a:first-child,
-.tv-program > h2 a:first-child,
-.visited > h2 a:first-child,
-.advert a,
-.headers a,
-.maps-header a,
-.poster-header a
+.blue-red-item:first-child
 {
     font-weight: normal;
     color: rgb(0,84,185);
 }
 
 .show-more-jokes:hover,
-.type-of-joke a:hover,
-.show-more-jokes a:hover,
-.jokes > h2 a:first-child:hover,
-.traffic > h2 a:first-child:hover,
-.auto-news > h2 a:first-child:hover,
-.weather > h2 a:first-child:hover,
-.visited > h2 a:first-child:hover,
 .chanel a:hover,
-.visited > h2 a:first-child:hover,
-.search a:hover,
-.advert a:hover,
+.search a:nth-child(n):hover,
 a:hover,
-.headers a:hover,
-.maps-header a:hover,
-.map-item:hover,
-.poster-header a:hover,
-.username::first-letter
-
+.blue-red-item:first-child:hover,
+.username::first-letter,
+.map-item:hover
 {
     color: rgb(255, 0, 0);
 }
@@ -102,7 +79,7 @@ a
     grid-area: b;
 }
 
-.header
+.smi-header
 {
     font-size: 140%;
     font-weight: normal;
@@ -127,8 +104,7 @@ a
 .news-list
 {
     padding: 0;
-    margin-bottom: 0;   
-    /* margin-top: 10px; */
+    margin-bottom: 0;
 }
 
 .list
@@ -220,18 +196,30 @@ form
     display: inline-block;
     width: 780px;
     height: 35px;
+    outline: none;
     border: 2px solid rgb(255, 221, 97);
 }
 
 .yandex-search
 {
     position: absolute;
-    right: 0;
+    right: -5px;
     width: 90px;
     height: 35px;
     border: 2px solid rgb(255, 221, 97);
     background: rgb(255, 221, 97);
     cursor: pointer;
+    outline: none;
+}
+
+.btn::after
+{
+    content: '';
+    position: absolute;
+    right: -33px;
+    border: 18px solid transparent;
+    border-left: 10px solid rgb(255, 221, 97);;
+
 }
 
 .example
@@ -350,11 +338,6 @@ form
 {
     font-weight: normal;
     display: inline-block;
-}
-
-.traffic-rate
-{
-    font-size: 130%;
 }
 
 .traffic img
