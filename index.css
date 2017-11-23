@@ -383,6 +383,7 @@ form
 .joke
 {
     height: 0;
+    width: 220px;
 }
 
 .type-of-joke::before
