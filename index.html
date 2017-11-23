@@ -3,7 +3,243 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
 </head>
 <body>
+    <main>
+        <div class="city">
+            <a href="#">Екатеринбург</a>
+        </div>
+        <article class="smi">
+            <div class="headers">
+                <h2 class="header"><a href="#">Сейчас в СМИ</a></h2>
+                <span class="news-city"><a href="#">в Екатеринбурге</a></span>
+                <span class="date">20 ноября, пятница 12:49</span>
+            </div>
+            <ul class="news-list">
+                <li class="list">
+                    <a href="#">
+                        Владимир Путин: военная операция в Сирии завершается
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        Депутат Госдумы прокомментировал выступление школьника в бундестаге
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        Росгидромет сообщил о радиоактивном загрязнении на Южном Урале
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        Задержанный в Минске украинский журналист признался в шпионаже
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        Сечин вновь пропустит заседание суда по делу Улюкаева
+                    </a>
+                </li>
+            </ul>
+            <aside class="rate">
+                <div>
+                    <h3 class="rate-name"><a href="#">USD ЦБ</a></h3><span>59,27</span>
+                </div>
+                <div>
+                    <h3 class="rate-name"><a href="#">EURO ЦБ</a></h3><span>69,62</span>
+                </div>
+                <div>
+                    <h3 class="rate-name"><a href="#">НЕФТЬ</a></h3><span>62,46</span>
+                    <span class="dif">+0,53%</span>
+                </div>    
+            </aside>
+        </article>
+        <aside class="advert">
+            <div class="age"><a href="#">0+</a></div>
+            <img src="optimize.png" alt="Яндекс">
+            <h3 class="top"><a href="#">Рабочй стол</a></h3>
+            <p class="baba">Бабочка на рабочем столе</p>
+        </aside>
+        <div class="logo">
+            <img src="ya.png" class="yandex" alt="Яндекс">
+        </div>
+        <section class="search">
+            <div class="par">
+                <a href="#">Видео</a>
+                <a href="#">Картинки</a>
+                <a href="#">Новости</a>
+                <a href="#">Карты</a>
+                <a href="#">Маркет</a>
+                <a href="#">Переводчик</a>
+                <a href="#">Музыка</a>
+                <a href="#">ещё</a>
+            </div>
+            <form>
+                <input name="q" type="search" class="yandex-input">
+                <button type="submit" class="yandex-search">Найти</button>
+            </form>
+            <div class="example">
+                Найдётся всё. Например, <a href="#">единица силы тока</a>
+            </div>
+        </section>
+        <section class="advert-under-search">
+            <img src="adv.png" alt="Реклама">
+        </section>
+        <section class="visited">
+            <h2 class="visited-header"><a href="#">Посещаемое</a></h2>
+            <div><h4 class="subheader"><a href="#">Маркет</a></h4>
+                <a href="#">товары из Китая</a></div>
+            <div><h4 class="subheader"><a href="#">Авто.ру</a></h4>
+                <a href="#">авто в кузове пикап</a></div>
+            <div><h4 class="subheader"><a href="#">Недвижимость</a></h4>
+                <a href="#">снять трёшку</a></div>
+            <div><h4 class="subheader"><a href="#">Работа</a></h4>
+                <a href="#">электриком</a></div>
+            <div><h4 class="subheader"><a href="#">Коллекции</a></h4>
+                <a href="#">дизайн прихожей</a></div>
+            <div><h4 class="subheader"><a href="#">Путешествия</a></h4>
+                <a href="#">туры на Кипр</a></div>
+            <div><h4 class="subheader"><a href="#">Здоровье</a></h4>
+                <a href="#">поговорите с врачом</a></div>
+        </section>
+        <section class="tv-program">
+            <h2 class="tv-program-header"><a href="#">Телепрограмма</a></h2>
+            <img src="tv.png" alt="Программа">
+            <div>
+                <span class="time">15:00</span>
+                <span class="program-name"><a href="#">Кухня</a></span>
+                <span class="chanel"><a href="#">СТС</a></span>
+            </div>
+            <div>
+                <span class="time">15:00</span>
+                <span class="program-name"><a href="#">Мистические истории</a></span>
+                <span class="chanel"><a href="#">ТВ-3</a></span>
+            </div>
+            <div>
+                <span class="time">15:05</span>
+                <span class="program-name"><a href="#">Мисс Марпл</a></span>
+                <span class="chanel"><a href="#">ТВ Центр</a></span>
+            </div>
+            <div>
+                <span class="time">15:15</span>
+                <span class="program-name"><a href="#">Давай поженимся!</a></span>
+                <span class="chanel"><a href="#">Первый</a></span>
+            </div>
+            <div>
+                <span class="time">15:20</span>
+                <span class="program-name"><a href="#">Страсть</a></span>
+                <span class="chanel"><a href="#">Пятый канал</a></span>
+            </div>
+        </section>
+        <section class="weather">
+            <h2 class="weather-header"><a href="#">Погода</a></h2>
+            <img src="sun.png" alt="Солнце">
+            <a href="#" class="current-temperature">-2 &#186;C</a>
+            <div><div class="temperature"><a href="#">Вечер -3,</a></div>
+            <div class="temperature"><a href="#">ночь -4</a></div></div>
+        </section>
+        <section class="traffic">
+            <h2 class="traffic-header"><a href="#">Пробки</a></h2>
+            <img src="tr.png" alt="Пробки">
+            <a href="#" class="current-traffic">4 балла</a>
+            <div class="info-traffic"><a href="#">Местами затруднения</a></div>
+        </section>
+        <section class="jokes">
+            <h2 class="jokes-header"><a href="#">Лучшие анекдоты</a></h2>
+            <input type="radio" name="more-jokes" id="joke1" class="show-more" checked>
+            <div class="joke">
+                <div class="type-of-joke"><a href="#">Мобаки</a></div>
+                <div class="joke-item">
+                    Дельфин, спасший мальчика, трагически умер,
+                    вернувшись в горящее здание за собакой.
+                </div>
+            </div>
+            <label class="show-more-jokes" for="joke2">⟳ Показать ещё</label>
+            <input type="radio" name="more-jokes" id="joke2" class="show-more">
+            <div class="joke">
+                <div class="type-of-joke"><a href="#">Песики</a></div>
+                <div class="joke-item">
+                    Собак, которые ищут наркотики, нужно наряжать
+                    в костюмы единорогов. Многие будут палиться уже от одного их вида.
+                </div>
+            </div>
+            <label class="show-more-jokes" for="joke3">⟳ Показать ещё</label>
+            <input type="radio" name="more-jokes" id="joke3" class="show-more">
+            <div class="joke">
+                <div class="type-of-joke"><a href="#">Медведь</a></div>
+                <div class="joke-item">
+                    Шел медведь по лесу. Видит: машина горит
+                    Сел в нее и сгорел.
+                </div>
+            </div>
+            <label class="show-more-jokes" for="joke1">⟳ Показать ещё</label>
+        </section>
+        <section class="auto-news">
+            <h2 class="auto-news-header"><a href="#">Автомобильные новости</a></h2>
+            <div class="auto-news-list">
+                <div class="auto-news-list__top-gradient-box"></div>
+                <div class="auto-news-list__bottom-gradient-box"></div>
+                <div class="this-auto-news">
+                    Nissan Serena Nismo: спор&shy;тив&shy;ный вэн за 1,8 млн руб.
+                    <span class="auto-time">15:05</span>
+                </div>
+                <div class="this-auto-news">
+                    Subaru привезет в Лос-Анджелес новый 7-местный кроссовер Ascent
+                    <span class="auto-time">15:15</span>
+                </div>
+                <div class="this-auto-news">
+                    ГИБДД: за пять лет личный состав ведомства сократили на 22
+                    <span class="auto-time">15:25</span>
+                </div>
+                <div class="this-auto-news">
+                    Появились первые изображения новой Toyota Camry для рынка РФ
+                    <span class="auto-time">15:35</span>
+                </div>
+                <div class="this-auto-news">
+                    Прогноз: после выборов президента цена бензина будет больше 50 руб.
+                    <span class="auto-time">15:45</span>
+                </div>
+                <div class="this-auto-news">
+                    В Великобритании представили новое поколение спорткупе Aston Martin Vantage
+                    <span class="auto-time">15:55</span>
+                </div>
+                <div class="this-auto-news">
+                    Есть мнение, что Tesla закроется в следующем году. Деньги кончатся просто
+                    <span class="auto-time">15:57</span>
+                </div>
+            </div>
+        </section>
+        <section class="user-menu">
+            <div class="settings"><a href="#">Настройки</a></div>
+            <div class="mail">
+                <div class="username"><a href="">login</a></div>
+                <div class="letters"><a href="#">138</a></div>
+            </div>
+        </section>
+        <section class="maps">
+            <h2 class="maps-header"><a href="#">Карта Екатеринбурга</a></h2>
+            <span class="map-item">Такси</span>
+            <span class="map-item">Расписания</span>
+            <span class="map-item">Междугородные автобусы</span>         
+        </section>
+        <section class="poster">
+            <h2 class="poster-header"><a href="#">Афиша</a></h2>
+            <div>
+                <div class="poster-name"><a href="#">Субурбикон</a></div>
+                <div class="poster-info"><a href="#">премьера в чт</a></div>
+            </div>
+            <div>
+                <div class="poster-name"><a href="#">Последний богатырь</a></div>
+                <div class="poster-info"><a href="#">приключения</a></div>
+            </div>
+            <div>
+                <div class="poster-name"><a href="#">Фиксики</a></div>
+                <div class="poster-info"><a href="#">мультфильм</a></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

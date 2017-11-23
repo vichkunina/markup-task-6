@@ -1,0 +1,530 @@
+main
+{
+    display: grid;
+    grid-template-columns: 270px 290px 340px 210px 240px;
+    grid-template-rows: 270px 130px 115px 90px 190px 130px;
+
+    grid-template-areas: 'a b b c d'
+        'e f f f g'
+        'h i i i g'
+        'h m o r g'
+        'h m o s g'
+        'h n p t g'
+        'h n p z g';
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.show-more-jokes,
+.type-of-joke a,
+.show-more-jokes a,
+.jokes > h2 a,
+.auto-news > h2 a:first-child,
+.traffic > h2 a:first-child,
+.weather > h2 a:first-child,
+.tv-program > h2 a:first-child,
+.visited > h2 a:first-child,
+.advert a,
+.headers a,
+.maps-header a,
+.poster-header a
+{
+    font-weight: normal;
+    color: rgb(0,84,185);
+}
+
+.show-more-jokes:hover,
+.type-of-joke a:hover,
+.show-more-jokes a:hover,
+.jokes > h2 a:first-child:hover,
+.traffic > h2 a:first-child:hover,
+.auto-news > h2 a:first-child:hover,
+.weather > h2 a:first-child:hover,
+.visited > h2 a:first-child:hover,
+.chanel a:hover,
+.visited > h2 a:first-child:hover,
+.search a:hover,
+.advert a:hover,
+a:hover,
+.headers a:hover,
+.maps-header a:hover,
+.map-item:hover,
+.poster-header a:hover,
+.username::first-letter
+
+{
+    color: rgb(255, 0, 0);
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logo
+{
+    grid-area: e;
+    position: relative;
+}
+
+.yandex
+{
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+}
+
+.city::before
+{
+    position: absolute;
+    content: ' ➤';
+    transform: rotate(-45deg);
+    left: -17px;
+    top: -3px;
+}
+
+.city
+{
+    opacity: .4;
+    grid-area: a;
+    position: absolute;
+    top: 23px;
+    left: 52px;
+    font-size: 100%;
+}
+
+.smi
+{
+    margin-top: 70px;
+    grid-area: b;
+}
+
+.header
+{
+    font-size: 140%;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+}
+
+.news-city
+{
+    font-size: 140%;
+    opacity: .6;
+    margin-left: 9px;
+}
+
+.date
+{
+    font-size: 93%;
+    margin-left: 5px;
+    color: rgb(128, 128, 128);
+}
+
+.news-list
+{
+    padding: 0;
+    margin-bottom: 0;   
+    /* margin-top: 10px; */
+}
+
+.list
+{
+    margin: 10px;
+}
+
+.rate
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rate > div
+{
+    margin-right: 40px;
+}
+
+.rate-name
+{
+    font-size: 100%;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.dif
+{
+    display: inline-block;
+    color: rgb(139, 138, 138);
+}
+
+.advert
+{
+    margin-top: 80px;
+    margin-right: -35px;
+    grid-area: c;
+    position: relative;
+    cursor: pointer;
+}
+
+.age
+{
+    position: absolute;
+    top: 0;
+    right: 110px;
+    cursor: pointer;
+}
+
+.top
+{
+    font-weight: normal;
+}
+
+.baba
+{
+    font-size: 70%;
+}
+
+.search
+{
+    grid-area: f;
+    margin-top: 25px;
+}
+
+.par
+{
+    margin-bottom: 7px;
+}
+
+.search a:not(:last-child)
+{
+    font-size: 130%;
+    color: rgb(0,84,185);
+    margin-right: 15px;
+}
+
+.search a:last-child
+{
+    color: rgb(202, 199, 199);
+}
+
+form
+{
+    position: relative;
+}
+
+.yandex-input
+{
+    display: inline-block;
+    width: 780px;
+    height: 35px;
+    border: 2px solid rgb(255, 221, 97);
+}
+
+.yandex-search
+{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    height: 35px;
+    border: 2px solid rgb(255, 221, 97);
+    background: rgb(255, 221, 97);
+    cursor: pointer;
+}
+
+.example
+{
+    margin-top: 10px;
+}
+
+.advert-under-search
+{
+    grid-area: i;
+}
+
+.advert-under-search img
+{
+    width: 750px;
+}
+
+.visited
+{
+    grid-area: m;
+}
+
+.visited-header
+{
+    font-weight: normal;
+}
+
+.subheader
+{
+    display: inline-block;
+    margin: 6px 0;
+}
+
+.subheader::after
+{
+    font-weight: normal;
+    content: ' —';
+}
+
+.tv-program
+{
+    grid-area: o;
+}
+
+.tv-program-header
+{
+    font-weight: normal;
+    display: inline-block;
+}
+
+.time
+{
+    display: inline-block;
+    margin: 6px 0;
+}
+
+.tv-program img
+{
+    margin-bottom: -7px;
+}
+
+.program-name
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.chanel
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.chanel a
+{
+    display: inline-block;
+    color: rgb(155, 152, 152);
+}
+
+.weather
+{
+    grid-area: r;
+}
+
+.weather img
+{
+    margin-bottom: -7px;
+}
+
+.temperature
+{
+    display: inline;
+}
+
+.current-temperature
+{
+    font-size: 130%;
+}
+
+.weather-header
+{
+    display: inline-block;
+}
+
+.current-traffic
+{
+    font-size: 130%;
+}
+
+.traffic
+{
+    grid-area: s;
+}
+
+.traffic-header
+{
+    font-weight: normal;
+    display: inline-block;
+}
+
+.traffic-rate
+{
+    font-size: 130%;
+}
+
+.traffic img
+{
+    margin-bottom: -5px;
+}
+
+.jokes
+{
+    grid-area: n;
+}
+
+.jokes input,
+.jokes .joke,
+.jokes label
+{
+    display: none;
+}
+
+.show-more:checked + .joke,
+.show-more:checked + .joke + label
+{
+    display: block;
+}
+
+.joke
+{
+    height: 0;
+}
+
+.type-of-joke::before
+{
+    content: 'Раздел: ';
+}
+
+.show-more-jokes
+{
+    position: absolute;
+    margin-top: 130px;
+}
+
+.joke-item::before
+{
+    content: '- ';
+}
+
+.auto-news
+{
+    grid-area: p;
+}
+
+.auto-news-list
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 250px;
+    height: 250px;
+}
+
+.auto-time
+{
+    display: inline-block;
+    font-size: 80%;
+    opacity: .5;
+}
+
+.auto-news-list__top-gradient-box
+{
+    width: 250px;
+    height: 10px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(255, 255, 255, .2),
+    rgb(255, 255, 255));
+}
+
+.auto-news-list__bottom-gradient-box
+{
+    width: 250px;
+    height: 10px;
+    margin-top: 240px;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .2),
+    rgb(255, 255, 255));
+}
+
+.auto-news-list::-webkit-scrollbar
+{
+    width: 17px;
+}
+
+.this-auto-news
+{
+    margin: 15px 0;
+}
+
+.user-menu
+{
+    grid-area: d;
+}
+
+.settings
+{
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mail
+{
+    box-shadow: 0 0 5px rgba(141, 140, 140, .5);
+    border-radius: 4px;
+    width: 50%;
+    height: 50px;
+}
+
+.user-menu
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.username
+{
+    margin: 8px;
+    font-weight: bold;
+}
+
+.letters
+{
+    margin: 8px;
+    font-weight: bold;
+}
+
+.user-name > .mail a:last-child::before
+{
+    content: 'Почта';
+    margin: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.maps
+{
+    grid-area: t;
+}
+
+.map-item
+{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 120%;
+    margin: 5px 0;
+}
+
+.poster
+{
+    grid-area: z;
+}
+
+.poster-info
+{
+    opacity: .5;
+    font-size: 90%;
+    display: inline-block;
+}
+
+.poster-name
+{
+    display: inline-block;
+    margin: 5px 0;
+}
