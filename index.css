@@ -18,7 +18,7 @@ main
 }
 
 .show-more-jokes,
-.blue-red-item:first-child
+.blue-red-item:first-child,
 {
     font-weight: normal;
     color: rgb(0,84,185);
@@ -30,7 +30,8 @@ main
 a:hover,
 .blue-red-item:first-child:hover,
 .username::first-letter,
-.map-item:hover
+.map-item:hover,
+.baba:hover
 {
     color: rgb(255, 0, 0);
 }
@@ -218,8 +219,7 @@ form
     position: absolute;
     right: -33px;
     border: 18px solid transparent;
-    border-left: 10px solid rgb(255, 221, 97);;
-
+    border-left: 10px solid rgb(255, 221, 97);
 }
 
 .example
