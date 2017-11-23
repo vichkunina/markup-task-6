@@ -18,7 +18,7 @@ main
 }
 
 .show-more-jokes,
-.blue-red-item:first-child,
+.blue-red-item
 {
     font-weight: normal;
     color: rgb(0,84,185);
@@ -28,7 +28,7 @@ main
 .chanel a:hover,
 .search a:nth-child(n):hover,
 a:hover,
-.blue-red-item:first-child:hover,
+.blue-red-item:hover,
 .username::first-letter,
 .map-item:hover,
 .baba:hover
@@ -199,6 +199,8 @@ form
     height: 35px;
     outline: none;
     border: 2px solid rgb(255, 221, 97);
+    padding: 10px;
+    font-size: 120%;
 }
 
 .yandex-search
